@@ -76,6 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
  })
 
 // onClick of likeBtn
+toyCollection.addEventListener('click', (e) => {
+    
+})
     // increment toy like count
 
     // send patch request to update likes
