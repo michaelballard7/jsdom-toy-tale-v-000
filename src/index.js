@@ -36,9 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
         div.classList.add('card')
         div.innerHTML = `
 
-            <h2> data.name </h2>
+            <h2> ${data.name} </h2>
 
-            <img src=${data.image} />
+            <img src = ${data.image} />
+
+            <p> ${data.likes} </p>
         `
 
 
