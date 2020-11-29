@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
  // onSubmit of toy container  POST to url
  toyForm.addEventListener('submit', (e) => {
 
-    console.log(e.target)
+    console.log(e.target.name)
+    console.log(e.target.image);
 
      e.preventDefault()
 
