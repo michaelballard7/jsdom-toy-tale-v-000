@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // onClick of likeBtn
 toyCollection.addEventListener('click', (e) => {
     // increment toy like count
+    e.target.previousElementSibling.innerText = parseInt(e.target.previousElementSibling.innerText) + 1
 
     // send patch request to update likes
         // set headers
