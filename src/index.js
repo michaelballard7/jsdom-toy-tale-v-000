@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
          headers: {
              method:'PATCH',
              "Content-Type":"application/json",
+             "Accept": "application/json"
          },
          body: JSON.stringify({
              "name": e.target.name.value,
