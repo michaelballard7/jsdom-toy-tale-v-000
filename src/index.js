@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetch(url,{
         method:'GET',
-        ContentType:'application/json'
+        "Content-Type":'application/json'
     })
     .then(res => res.json())
     .then( data => {
@@ -54,6 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
  // onSubmit of toy container  POST to url
  toyForm.addEventListener('submit', (e) => {
      let url = 'http://localhost:3000/toys'
+
+     fetch(url, {
+         method:'PATCH',
+         co
+     })
  })
     // headers as Content-Type: application/json, Accept: application/json
     // send new toy as payload (name: imgUrl)
