@@ -81,7 +81,7 @@ toyCollection.addEventListener('click', (e) => {
 
     if(e.target.classList[0] === 'like-btn'){
 
-        console.log(e.target.previousElementSibling.innerText + 1)
+        console.log(parseInt(e.target.previousElementSibling.innerText) + 1)
         // let url = 'http://localhost:3000/toys/:id'
         // fetch(url, {
         //     method: 'PATCH',
