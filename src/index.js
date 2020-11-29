@@ -1,8 +1,16 @@
 let addToy = false;
 
 document.addEventListener("DOMContentLoaded", () => {
+
   const addBtn = document.querySelector("#new-toy-btn");
   const toyFormContainer = document.querySelector(".container");
+
+  // select the toy collection
+  let toyCollection = document.querySelector('#toy-collection')
+
+  // select like counter:
+
+
   addBtn.addEventListener("click", () => {
     // hide & seek with the form
     addToy = !addToy;
@@ -12,4 +20,32 @@ document.addEventListener("DOMContentLoaded", () => {
       toyFormContainer.style.display = "none";
     }
   });
+
+  // fetch all toys index and display
+
+    // create card div
+
+        // h2
+
+        // img:src
+
+        // p
+
+        // button, class like-btn
+
+
+ // onSubmit of toy container  POST to url
+    // headers as Content-Type: application/json, Accept: application/json
+    // send new toy as payload (name: imgUrl)
+
+
+
+// onClick of likeBtn
+    // increment toy like count
+
+    // send patch request to update likes
+        // set headers
+        // set body as incrementer
+
+
 });
