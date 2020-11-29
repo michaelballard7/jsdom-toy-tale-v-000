@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // onClick of likeBtn
 toyCollection.addEventListener('click', (e) => {
 
-    console.log(e.target.closets('p'))
+    console.log(e.target.closets('p').innerText)
     // if(e.target.classList[0] === 'like-btn'){
     //     let url = 'http://localhost:3000/toys/:id'
     //     fetch(url, {
