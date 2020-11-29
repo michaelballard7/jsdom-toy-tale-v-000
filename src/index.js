@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // onClick of likeBtn
 toyCollection.addEventListener('click', (e) => {
 
-    console.log(e.target)
+    console.log(e.target.classList[0])
 })
     // increment toy like count
 
