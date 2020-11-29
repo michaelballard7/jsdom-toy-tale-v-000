@@ -35,10 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
         let div = document.createElememt('div')
         div.classList.add('card')
         div.innerHTML = `
+
             <h2> data.name </h2>
+
+            <img src=${data.image} />
         `
 
-            // h2
+
 
             // img:src
 
