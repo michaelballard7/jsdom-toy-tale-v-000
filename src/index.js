@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // p
 
         // button, class like-btn
-        
+
         div.innerHTML = `
 
             <h2> ${data.name} </h2>
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-        
+
 
         // add div to toyCollection
 
