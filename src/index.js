@@ -79,14 +79,16 @@ document.addEventListener("DOMContentLoaded", () => {
 toyCollection.addEventListener('click', (e) => {
     // increment toy like count
 
-
+    console.log(e.target.attributes)
     // send patch request to update likes
         // set headers
         // set body as incrementer
     if(e.target.classList[0] === 'like-btn'){
-        e.target.previousElementSibling.innerText = parseInt(e.target.previousElementSibling.innerText) + 1
 
-        let url = 'http://localhost:3000/toys/:id'
+        // e.target.previousElementSibling.innerText = parseInt(e.target.previousElementSibling.innerText) + 1
+
+
+        let url = `http://localhost:3000/toys/:id`
         fetch(url, {
             method: 'PATCH',
             headers: {
