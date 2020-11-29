@@ -78,20 +78,22 @@ document.addEventListener("DOMContentLoaded", () => {
 // onClick of likeBtn
 toyCollection.addEventListener('click', (e) => {
 
-    console.log(e.target.closest('p'))
-    // if(e.target.classList[0] === 'like-btn'){
-    //     let url = 'http://localhost:3000/toys/:id'
-    //     fetch(url, {
-    //         method: 'PATCH',
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //             Accept: "application/json"
-    //         },
-    //         body: JSON.stringify({
-    //             "likes": e.target.
-    //         })
-    //     })
-    // }
+
+    if(e.target.classList[0] === 'like-btn'){
+
+        console.log(e.target.closest('p'))
+        // let url = 'http://localhost:3000/toys/:id'
+        // fetch(url, {
+        //     method: 'PATCH',
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //         Accept: "application/json"
+        //     },
+        //     body: JSON.stringify({
+        //         "likes": e.target.
+        //     })
+        // })
+    }
 })
     // increment toy like count
 
