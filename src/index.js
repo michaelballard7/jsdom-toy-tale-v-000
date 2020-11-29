@@ -87,7 +87,7 @@ toyCollection.addEventListener('click', (e) => {
 
         let id = e.target.getAttribute('id')
 
-        // e.target.previousElementSibling.innerText = parseInt(e.target.previousElementSibling.innerText) + 1
+        e.target.previousElementSibling.innerText = parseInt(e.target.previousElementSibling.innerText) + 1
 
 
         let url = `http://localhost:3000/toys/${id}`
