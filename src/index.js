@@ -82,8 +82,6 @@ toyCollection.addEventListener('click', (e) => {
     // send patch request to update likes
         // set headers
         // set body as incrementer
-
-
     if(e.target.classList[0] === 'like-btn'){
 
         let url = 'http://localhost:3000/toys/:id'
@@ -99,6 +97,5 @@ toyCollection.addEventListener('click', (e) => {
         })
     }
 })
-
 
 });
