@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let toyCollection = document.querySelector('#toy-collection')
 
   // select the toy form
-  let toyForm = documemt.querySelector('.add-toy-form')
+  let toyForm = document.querySelector('.add-toy-form')
 
   addBtn.addEventListener("click", () => {
     // hide & seek with the form
