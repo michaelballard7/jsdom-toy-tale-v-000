@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             div.innerHTML = `
                 <h2> ${toy.name} </h2>
                 <img src = ${toy.image} class="toy-avatar"> </img>
-                <p> ${toy.likes}</p>Likes 
+                <p> ${toy.likes}</p>Likes
                 <button class='like-btn' id=${toy.id}> Like </button>
             `
             // add div to toyCollection
@@ -81,7 +81,7 @@ toyCollection.addEventListener('click', (e) => {
 
     if(e.target.classList[0] === 'like-btn'){
 
-        console.log(e.target.previousElementSibling.innerText)
+        console.log(e.target.previousElementSibling.innerText + 1)
         // let url = 'http://localhost:3000/toys/:id'
         // fetch(url, {
         //     method: 'PATCH',
