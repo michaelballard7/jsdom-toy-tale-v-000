@@ -60,9 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
      // headers as Content-Type: application/json, Accept: application/json
      // send new toy as payload (name, imgUrl, likes:0)
-     let post = await fetch(url, {
+     fetch(url, {
+         method:'POST',
          headers: {
-             method:'POST',
              "Content-Type":"application/json",
              "Accept": "application/json"
          },
