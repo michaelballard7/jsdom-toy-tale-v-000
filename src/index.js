@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
      fetch(url, {
          method:'PATCH',
-         co
+         "Content-Type":"application/json"
      })
  })
     // headers as Content-Type: application/json, Accept: application/json
