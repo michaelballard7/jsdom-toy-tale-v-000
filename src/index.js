@@ -24,10 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // fetch all toys index and display
     let url = 'http://localhost:3000/toys'
 
-    fetch(url,{
-        method:'GET',
-        "Content-Type":'application/json'
-    })
+    fetch(url)
     .then(res => res.json())
     .then( data => {
 
@@ -57,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
      fetch(url, {
          method:'PATCH',
-         "Content-Type":"application/json"
+         "Content-Type":"application/json",
      })
  })
     // headers as Content-Type: application/json, Accept: application/json
