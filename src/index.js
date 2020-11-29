@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let div = document.createElememt('div')
         div.classList.add('card')
         div.innerHTML = `
-            <h2> </h2>
+            <h2> data.name </h2>
         `
 
             // h2
