@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             div.innerHTML = `
                 <h2> ${toy.name} </h2>
                 <img src = ${toy.image} class="toy-avatar"> </img>
-                <p> ${toy.likes} </p>Likes 
+                <p> ${toy.likes}</p>Likes 
                 <button class='like-btn' id=${toy.id}> Like </button>
             `
             // add div to toyCollection
