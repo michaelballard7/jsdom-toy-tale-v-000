@@ -34,22 +34,26 @@ document.addEventListener("DOMContentLoaded", () => {
         // create card div
         let div = document.createElememt('div')
         div.classList.add('card')
+
+        // img:src
+
+        // p
+
+        // button, class like-btn
+        
         div.innerHTML = `
 
             <h2> ${data.name} </h2>
 
             <img src = ${data.image}> </img>
 
-            <p> ${data.likes} </p>
+            <p> ${data.likes} Likes </p>
+            <button class='like-btn'> </button>
         `
 
 
 
-            // img:src
-
-            // p
-
-            // button, class like-btn
+        
 
         // add div to toyCollection
 
