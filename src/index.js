@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // select the toy collection
   let toyCollection = document.querySelector('#toy-collection')
 
+  // select the toy form
+  let toyForm = documemt.querySelector('.add-toy-form')
+
   addBtn.addEventListener("click", () => {
     // hide & seek with the form
     addToy = !addToy;
@@ -49,6 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
  // onSubmit of toy container  POST to url
+ toyForm.addEventListener('submit', (e) => {
+     let url = 'http://localhost:3000/toys'
+ })
     // headers as Content-Type: application/json, Accept: application/json
     // send new toy as payload (name: imgUrl)
 
