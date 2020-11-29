@@ -81,18 +81,17 @@ toyCollection.addEventListener('click', (e) => {
 
     if(e.target.classList[0] === 'like-btn'){
 
-        console.log(parseInt(e.target.previousElementSibling.innerText) + 1)
-        // let url = 'http://localhost:3000/toys/:id'
-        // fetch(url, {
-        //     method: 'PATCH',
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //         Accept: "application/json"
-        //     },
-        //     body: JSON.stringify({
-        //         "likes": e.target.
-        //     })
-        // })
+        let url = 'http://localhost:3000/toys/:id'
+        fetch(url, {
+            method: 'PATCH',
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify({
+                "likes": parseInt(e.target.previousElementSibling.innerText) + 1
+            })
+        })
     }
 })
     // increment toy like count
