@@ -36,11 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
         div.classList.add('card')
 
         // img:src
-
         // p
-
         // button, class like-btn
-
         div.innerHTML = `
 
             <h2> ${data.name} </h2>
