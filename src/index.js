@@ -98,7 +98,7 @@ toyCollection.addEventListener('click', (e) => {
                 Accept: "application/json"
             },
             body: JSON.stringify({
-                "likes": parseInt(e.target.previousElementSibling.innerText) + 1
+                "likes": parseInt(e.target.previousElementSibling.innerText)
             })
         })
     }
