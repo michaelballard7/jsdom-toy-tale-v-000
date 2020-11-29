@@ -73,9 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
          })
      })
      .then( res => res.json())
+     .then( () => {
+         window.location.reload()
+     })
      .catch( err => console.log(err))
 
-     window.location.reload()
+     
  })
 
 // onClick of likeBtn
