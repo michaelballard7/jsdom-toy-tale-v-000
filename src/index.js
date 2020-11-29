@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // button, class like-btn
             div.innerHTML = `
                 <h2> ${toy.name} </h2>
-                <img src = ${toy.image}> </img>
+                <img src = ${toy.image} class="toy-avatar"> </img>
                 <p> ${toy.likes} Likes </p>
                 <button class='like-btn'> Like </button>
             `
