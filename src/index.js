@@ -55,16 +55,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
      e.preventDefault()
 
-     let url = 'http://localhost:3000/toys'
-     fetch(url, {
-         headers: {
-             method:'PATCH',
-             "Content-Type":"application/json",
-         },
-         body: JSON.stringify({
-             "likes": 0
-         })
-     })
+    //  let url = 'http://localhost:3000/toys'
+    //  fetch(url, {
+    //      headers: {
+    //          method:'PATCH',
+    //          "Content-Type":"application/json",
+    //      },
+    //      body: JSON.stringify({
+    //          "likes": 0
+    //      })
+    //  })
  })
     // headers as Content-Type: application/json, Accept: application/json
     // send new toy as payload (name: imgUrl)
