@@ -52,10 +52,16 @@ document.addEventListener("DOMContentLoaded", () => {
  toyForm.addEventListener('submit', (e) => {
      let url = 'http://localhost:3000/toys'
 
-     fetch(url, {
-         method:'PATCH',
-         "Content-Type":"application/json",
-     })
+     console.log('clicked', e.target)
+    //  fetch(url, {
+    //      headers: {
+    //          method:'PATCH',
+    //          "Content-Type":"application/json",
+    //      },
+    //      body: JSON.stringify({
+    //          "likes": e.target
+    //      })
+    //  })
  })
     // headers as Content-Type: application/json, Accept: application/json
     // send new toy as payload (name: imgUrl)
