@@ -99,6 +99,6 @@ toyCollection.addEventListener('click', (e) => {
         })
     }
 })
-    
+
 
 });
