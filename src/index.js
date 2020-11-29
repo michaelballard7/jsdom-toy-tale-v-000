@@ -22,16 +22,33 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // fetch all toys index and display
+    let url = 'http://localhost:3000/toys'
 
-    // create card div
+    fetch(url,{
+        method:'GET',
+        Content-Type:'application/json'
+    })
+    .then(res => res.json())
+    .then( data => {
+        console.log(data)
+        // create card div
+        let div = document.createElememt('div')
+        div.classList.add('card')
+        div.innerHTML = `
+            <h2> </h2>
+        `
 
-        // h2
+            // h2
 
-        // img:src
+            // img:src
 
-        // p
+            // p
 
-        // button, class like-btn
+            // button, class like-btn
+        
+    })
+
+    
 
 
  // onSubmit of toy container  POST to url
