@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h2> ${toy.name} </h2>
                 <img src = ${toy.image} class="toy-avatar"> </img>
                 <p> ${toy.likes} Likes </p>
-                <button class='like-btn'> Like </button>
+                <button class='like-btn' id=${toy.id}> Like </button>
             `
             // add div to toyCollection
             toyCollection.insertAdjacentElement('beforeend',div)
