@@ -51,9 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
  // onSubmit of toy container  POST to url
  toyForm.addEventListener('submit', async (e) => {
 
-    console.log(e.target.name.value)
-    console.log(e.target.image.value);
-
      e.preventDefault()
 
      let url = 'http://localhost:3000/toys'
