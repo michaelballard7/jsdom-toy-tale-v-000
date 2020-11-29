@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <img src = ${data.image}> </img>
 
             <p> ${data.likes} Likes </p>
-            <button class='like-btn'> </button>
+            <button class='like-btn'> Like </button>
         `
 
 
