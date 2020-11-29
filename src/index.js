@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // create card div
             let div = document.createElement('div')
             div.classList.add('card')
-
             // img:src
             // p
             // button, class like-btn
@@ -47,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
             `
             // add div to toyCollection
             toyCollection.insertAdjacentElement('beforeend',div)
-
         })
 
 
