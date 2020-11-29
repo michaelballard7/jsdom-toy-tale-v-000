@@ -57,6 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
      e.preventDefault()
 
      let url = 'http://localhost:3000/toys'
+
+     // headers as Content-Type: application/json, Accept: application/json
+     // send new toy as payload (name, imgUrl, likes:0)
      fetch(url, {
          headers: {
              method:'PATCH',
@@ -69,10 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
              "likes":0
          })
      })
+     .then( res => res.json())
+     .then( data => location.reload())
  })
-    // headers as Content-Type: application/json, Accept: application/json
-    // send new toy as payload (name: imgUrl)
-
 
 // onClick of likeBtn
     // increment toy like count
