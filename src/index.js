@@ -77,6 +77,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // onClick of likeBtn
 toyCollection.addEventListener('click', (e) => {
+    // increment toy like count
+
+    // send patch request to update likes
+        // set headers
+        // set body as incrementer
 
 
     if(e.target.classList[0] === 'like-btn'){
@@ -94,11 +99,6 @@ toyCollection.addEventListener('click', (e) => {
         })
     }
 })
-    // increment toy like count
-
-    // send patch request to update likes
-        // set headers
-        // set body as incrementer
-
+    
 
 });
