@@ -8,9 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // select the toy collection
   let toyCollection = document.querySelector('#toy-collection')
 
-  // select like counter:
-
-
   addBtn.addEventListener("click", () => {
     // hide & seek with the form
     addToy = !addToy;
@@ -47,16 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
             // add div to toyCollection
             toyCollection.insertAdjacentElement('beforeend',div)
         })
-        
+
     })
-
-
 
 
  // onSubmit of toy container  POST to url
     // headers as Content-Type: application/json, Accept: application/json
     // send new toy as payload (name: imgUrl)
-
 
 
 // onClick of likeBtn
