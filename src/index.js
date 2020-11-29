@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 toyCollection.addEventListener('click', (e) => {
     // increment toy like count
 
-    console.log(e.target.attributes)
+    console.log(e.target.getAttribute('id'))
     // send patch request to update likes
         // set headers
         // set body as incrementer
