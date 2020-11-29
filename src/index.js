@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetch(url,{
         method:'GET',
-        Content-Type:'application/json'
+        ContentType:'application/json'
     })
     .then(res => res.json())
     .then( data => {
