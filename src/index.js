@@ -50,12 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <p> ${data.likes} Likes </p>
             <button class='like-btn'> Like </button>
         `
-
-
-
-
-
         // add div to toyCollection
+        toyCollection.insertAdjancentElement('beforeend',div)
 
     })
 
