@@ -30,25 +30,26 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(res => res.json())
     .then( data => {
-        console.log(data)
-        // create card div
-        let div = document.createElement('div')
-        div.classList.add('card')
 
-        // img:src
-        // p
-        // button, class like-btn
-        div.innerHTML = `
+        data.forEach( toy => {
+            // create card div
+            let div = document.createElement('div')
+            div.classList.add('card')
 
-            <h2> ${data.name} </h2>
-
-            <img src = ${data.image}> </img>
-
-            <p> ${data.likes} Likes </p>
-            <button class='like-btn'> Like </button>
-        `
-        // add div to toyCollection
-        toyCollection.insertAdjacentElement('beforeend',div)
+            // img:src
+            // p
+            // button, class like-btn
+            div.innerHTML = `
+                <h2> ${toy.name} </h2>
+                <img src = ${data.image}> </img>
+                <p> ${toy.likes} Likes </p>
+                <button class='like-btn'> Like </button>
+            `
+            // add div to toyCollection
+            toyCollection.insertAdjacentElement('beforeend',div)
+            
+        })
+    
 
     })
 
