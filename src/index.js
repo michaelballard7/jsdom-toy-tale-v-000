@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // button, class like-btn
 
+        // add div to toyCollection
+
     })
 
 
