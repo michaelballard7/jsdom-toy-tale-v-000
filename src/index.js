@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             <h2> ${data.name} </h2>
 
-            <img src = ${data.image} />
+            <img src = ${data.image}> </img>
 
             <p> ${data.likes} </p>
         `
