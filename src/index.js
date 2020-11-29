@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(res => res.json())
     .then( data => {
-        console.log(data)
+
         // create card div
         let div = document.createElememt('div')
         div.classList.add('card')
