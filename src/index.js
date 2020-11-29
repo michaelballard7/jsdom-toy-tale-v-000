@@ -89,7 +89,6 @@ toyCollection.addEventListener('click', (e) => {
 
         e.target.previousElementSibling.innerText = parseInt(e.target.previousElementSibling.innerText) + 1
 
-
         let url = `http://localhost:3000/toys/${id}`
         fetch(url, {
             method: 'PATCH',
