@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
  // onSubmit of toy container  POST to url
- toyForm.addEventListener('submit', (e) => {
+ toyForm.addEventListener('submit', async (e) => {
 
     console.log(e.target.name.value)
     console.log(e.target.image.value);
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
      // headers as Content-Type: application/json, Accept: application/json
      // send new toy as payload (name, imgUrl, likes:0)
-     fetch(url, {
+     let post = await fetch(url, {
          headers: {
              method:'PATCH',
              "Content-Type":"application/json",
@@ -73,10 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
          })
      })
      .then( res => res.json())
-     .then( () => {
-         window.location.reload()
-     })
      .catch( err => console.log(err))
+
+     window.location.reload()
  })
 
 // onClick of likeBtn
