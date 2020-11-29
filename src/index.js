@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
             `
             // add div to toyCollection
             toyCollection.insertAdjacentElement('beforeend',div)
-            
+
         })
-    
+
 
     })
 
