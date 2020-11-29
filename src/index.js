@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then( data => {
 
         // create card div
-        let div = document.createElememt('div')
+        let div = document.createElement('div')
         div.classList.add('card')
 
         // img:src
