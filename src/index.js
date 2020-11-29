@@ -50,11 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
  // onSubmit of toy container  POST to url
  toyForm.addEventListener('submit', (e) => {
+          console.log('clicked', e.target)
      e.preventDefault()
-     
+
      let url = 'http://localhost:3000/toys'
 
-     console.log('clicked', e.target)
+
     //  fetch(url, {
     //      headers: {
     //          method:'PATCH',
